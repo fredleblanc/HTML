@@ -1,0 +1,299 @@
+/**
+ * Arrange
+ * A very, very basic grid system, a bit like Skeleton
+ *
+ * Copyright (c) 2013, Fred LeBlanc
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without 
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *  - Redistributions of source code must retain the above copyright notice, 
+ *    this list of conditions and the following disclaimer.
+ *
+ *  - Redistributions in binary form must reproduce the above copyright notice, 
+ *    this list of conditions and the following disclaimer in the documentation 
+ *    and/or other materials provided with the distribution.
+ * 
+ *  - Neither the name of the FredHQ nor the names of its contributors 
+ *    may be used to endorse or promote products derived from this software 
+ *    without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ * POSSIBILITY OF SUCH DAMAGE.
+ */
+
+
+
+/**
+ * Base Structure
+ * ----------------------------------------------------------------------------
+ * The following styles create elements that are used to structure the general
+ * page and hold together sets of grid columns. They are self-clearing.
+ */
+
+/**
+ * Holds the contents of the page, preventing it from spilling out everywhere,
+ * you'll probably want to extend this with a max-width and width.
+ */
+.container,
+.row,
+section {
+   position: relative;
+   margin: 0 auto;
+   padding: 0;
+   *zoom: 1;
+}
+
+   .container:before,
+   .container:after,
+   .row:before,
+   .row:after,
+   section:before,
+   section:after {
+      content: " ";
+      display: table;
+   }
+
+   .container:after,
+   .row:after,
+   section:after {
+      clear: both;
+   }
+
+
+/**
+ * Defines the basics of what a grid column will be
+ */
+.container .column,
+.container .columns {
+   float: left;
+   display: inline;
+   margin: 0 0 0 2%;
+}
+
+   .container .column:first-child,
+   .container .columns:first-child {
+      margin-left: 0 !important;
+   }
+
+
+.row,
+section {
+   margin-bottom: 1em;
+}
+
+
+
+/**
+ * Grid Structure
+ * ----------------------------------------------------------------------------
+ * The following styles create grid columns in percentages.
+ * Terminology:
+ *    column - 6.5% - a single-width column of content
+ *    gap    - 2.0% - room between content columns
+ * The math:
+ *    width  = (# of columns * 6.5%) + ((# of columns - 1) * 2%) 
+ */
+.twelfth.column,
+.twelfth.columns,
+.one.column,
+.one.columns {
+   width: 6.5%
+}
+
+.sixth.column,
+.sixth.columns,
+.one-sixth.column,
+.one-sixth.columns,
+.two.column,
+.two.columns {
+   width: 15%;
+}
+
+.quarter.column,
+.quarter.columns,
+.one-quarter.column,
+.one-quarter.columns,
+.one-fourth.column,
+.one-fourth.columns,
+.three.column,
+.three.columns {
+   width: 23.5%;
+}
+
+.third.column,
+.third.columns,
+.one-third.column,
+.one-third.columns,
+.four.column,
+.four.columns {
+   width: 32%;
+}
+
+.five.column,
+.five.columns {
+   width: 40.5%;
+}
+
+.half.column,
+.half.columns,
+.one-half.column,
+.one-half.columns,
+.six.column,
+.six.columns {
+   width: 49%;
+}
+
+.seven.column,
+.seven.columns {
+   width: 57.5%;
+}
+
+.two-thirds.column,
+.two-thirds.columns,
+.eight.column,
+.eight.columns {
+   width: 66%;
+}
+
+.three-quarters.column,
+.three-quarters.columns,
+.three-forths.column,
+.three-forths.columns,
+.nine.column,
+.nine.columns {
+   width: 74.5%;
+}
+
+.ten.column,
+.ten.columns {
+   width: 83%;
+}
+
+.eleven.column,
+.eleven.columns {
+   width: 91.5%;
+}
+
+.full.column,
+.full.columns,
+.twelve.column,
+.twelve.columns {
+   width: 100%;
+}
+
+
+
+/**
+ * Grid Offsets
+ * ----------------------------------------------------------------------------
+ * For indenting columns.
+ */
+
+.offset-by-one {
+   padding-left: 8.5%;
+}
+
+.offset-by-sixth,
+.offset-by-one-sixth,
+.offset-by-two {
+   padding-left: 17%;
+}
+
+.offset-by-quarter,
+.offset-by-one-quarter,
+.offset-by-one-fourth,
+.offset-by-three {
+   padding-left: 25.5%;
+}
+
+.offset-by-third,
+.offset-by-one-third,
+.offset-by-four {
+   padding-left: 34%;
+}
+
+.offset-by-five {
+   padding-left: 42.5%;
+}
+
+.offset-by-half,
+.offset-by-one-half,
+.offset-by-six {
+   padding-left: 51%;
+}
+
+.offset-by-seven {
+   padding-left: 59.5%;
+}
+
+.offset-by-two-thirds,
+.offset-by-eight {
+   padding-left: 68%;
+}
+
+.offset-by-three-quarters,
+.offset-by-three-fourths,
+.offset-by-nine {
+   padding-left: 76.5%;
+}
+
+.offset-by-ten {
+   padding-left: 85%;
+}
+
+.offset-by-eleven {
+   padding-left: 93.5%;
+}
+
+
+
+/**
+ * Structure Helpers
+ * ----------------------------------------------------------------------------
+ * Because sometimes floating elements will get in the way.
+ */
+
+/**
+ * Micro-clearfix, by Nicolas Gallagher
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+.clearfix {
+   *zoom: 1;
+}
+   
+   .clearfix:before,
+   .clearfix:after {
+      content: " ";
+      display: table;
+   }
+   
+   .clearfix:after {
+      clear: both;
+   }
+   
+
+/**
+ * This class is best used width <br> or <hr>
+ */
+.clear {
+   clear: both;
+   display: block;
+   overflow: hidden;
+   visibility: hidden;
+   margin: 0;
+   padding: 0;
+   width: 0;
+   height: 0;
+   border: 0;
+}
