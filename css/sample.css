@@ -1,0 +1,72 @@
+html {
+	font: normal normal normal 1em/1.5 "Helvetica Neue", Arial, sans-serif;
+	color: #16161e;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.page {
+	max-width: 80em;
+	width: 92%;
+	margin: 1.5em auto;
+}
+
+h1 {
+	margin: 0 0 0.6em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #ccc;
+}
+
+h2 {
+	margin: 1.25em 0 0.5em;
+}
+
+h3 {
+	margin: 0.5em 0 -0.65em;
+}
+
+a {
+	color: #15abe0;
+	text-decoration: none;
+}
+
+fieldset .row {
+	margin: 0.5em 0 0.75em;
+}
+
+div.row > div {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	background-color: #f3f3f3;
+	line-height: 2.6em;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+div.row > div.field {
+	border: none;
+	overflow: auto;
+	white-space: normal;
+	line-height: 1.5;
+	background-color: transparent;
+}
+
+div.row.medium > div {
+	line-height: 8em;
+}
+
+div.row.large > div {
+	line-height: 16em;
+}
+
+div.row.x-large > div {
+	line-height: 22em;
+}

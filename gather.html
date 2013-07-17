@@ -1,0 +1,236 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Gather — A Simple Form Design</title>
+		
+		<link rel="stylesheet" href="./css/gather.css">
+		<link rel="stylesheet" href="./css/arrange.css">
+		<link rel="stylesheet" href="./css/sample.css">
+	</head>
+	<body>
+		<div class="page">
+			<h1>Gather</h1>
+			
+			<p>
+				<em>Gather</em> is a simple design system for laying out forms.
+			</p>
+			
+			
+			<h2>The Kitchen Sink</h2>
+
+			<form action="#">
+				<fieldset class="labelled">
+					<legend>About You</legend>
+					
+					<div class="field">
+						<label for="field_1">First Name<strong>*</strong></label>
+						<input type="text" name="first_name" id="field_1" value="">
+						<small>A bit of helper text.</small>
+					</div>
+					
+					<div class="field">
+						<label for="field_2">Last Name</label>
+						<small>Enter your family name.</small>
+						<input type="text" name="last_name" id="field_2" value="">
+					</div>
+
+					<div class="field">
+						<label for="field_8">Password</label>
+						<input type="password" name="password" id="field_8" value="">
+					</div>
+					
+					<div class="field">
+						<label for="field_3">T-Shirt Size</label>
+						<select name="size" id="field_3">
+							<option value="Small">Small</option>
+							<option value="Medium">Medium</option>
+							<option value="Large">Large</option>
+							<option value="X-Large">X-Large</option>
+							<option value="XX-Large">XX-Large</option>
+						</select>
+					</div>
+				</fieldset>
+				
+				<fieldset class="labelled">
+					<legend>Arbitrary Questions</legend>
+					
+					<div class="field">
+						<label>Meal Choice</label>
+						
+						<ul class="field-group">
+							<li>
+								<input type="radio" name="meal_chioce" id="field_4_a" value="Chicken" class="radio">
+								<p><label for="field_4_a">Chicken</label></p>
+							</li>
+							<li>
+								<input type="radio" name="meal_chioce" id="field_4_b" value="Salmon" class="radio">
+								<p><label for="field_4_b">Salmon</label></p>
+							</li>
+							<li>
+								<input type="radio" name="meal_chioce" id="field_4_c" value="Beef" class="radio">
+								<p><label for="field_4_c">Beef</label></p>
+							</li>
+							<li>
+								<input type="radio" name="meal_chioce" id="field_4_d" value="Vegetables" class="radio">
+								<p><label for="field_4_d">Vegetables</label></p>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="field">
+						<label>Activities</label>
+						<small>Choose up to three.</small>
+						
+						<ul class="field-group">
+							<li>
+								<input type="checkbox" name="meal_chioce" id="field_5_a" value="Water Ski" class="checkbox">
+								<p><label for="field_5_a">Water Ski</label></p>
+							</li>
+							<li>
+								<input type="checkbox" name="meal_chioce" id="field_5_b" value="Jet Ski" class="checkbox">
+								<p><label for="field_5_b">Jet Ski</label></p>
+							</li>
+							<li>
+								<input type="checkbox" name="meal_chioce" id="field_5_c" value="Alpine Ski" class="checkbox">
+								<p><label for="field_5_c">Alpine Ski</label></p>
+							</li>
+							<li>
+								<input type="checkbox" name="meal_chioce" id="field_5_d" value="Cross-Country Ski" class="checkbox">
+								<p><label for="field_5_d">Cross-Country Ski</label></p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="field">
+						<label for="field_6">Mission Statement</label>
+						<textarea name="mission_statement" id="field_6" rows="5" cols="35"></textarea>
+					</div>
+
+					<div class="field">
+						<label for="field_7">Screenplay</label>
+						<textarea name="screenplay" id="field_7" class="tall" rows="5" cols="35"></textarea>
+					</div>
+
+					<div class="field single-checkbox">
+						<input type="checkbox" name="meal_chioce" id="field_13" value="Yes" class="checkbox">
+						<p><label for="field_13">I agree to the <a href="#">terms &amp; conditions</a> for this website</label></p>
+					</div>
+					
+					<div class="field">
+						<input type="submit" class="button" value="Submit">
+					</div>
+				</fieldset>
+			</form>
+			
+			<h2>Within the Grid</h2>
+			
+			<div class="container">
+				<div class="seven column">
+					<form action="#">
+						<fieldset>
+							<div class="row">
+								<p class="field half column">
+									<label for="field_9">Email Address</label>
+									<input type="text" name="email" id="field_9" value="">
+								</p>
+
+								<p class="field half column">
+									<label for="field_10">Confirm Email Address</label>
+									<input type="text" name="confirm_email" id="field_10" value="">
+								</p>
+							</div>
+
+							<div class="row">
+								<p class="field twelve column">
+									<label for="field_11">Street Address</label>
+									<textarea name="street_address" id="field_11" class="short" rows="5" cols="35"></textarea>
+								</p>
+							</div>
+							
+							<div class="row">
+								<p class="field eight column">
+									<label for="field_12">City</label>
+									<input type="text" name="city" id="field_12" value="">
+								</p>
+								<p class="field two column">
+									<label for="field_13">State</label>
+									<select name="state">
+										<option value="MA">MA</option>
+										<option value="NH">NH</option>
+										<option value="RI">RI</option>
+									</select>
+								</p>
+								<p class="field two column">
+									<label for="field_14">Zip</label>
+									<input type="text" name="zip" id="field_14" value="" maxlength="5">
+								</p>
+							</div>
+							
+							<div class="row">
+								<div class="field right">
+									<input type="submit" class="button" value="Submit">
+									<button class="button">Submit</button>
+								</div>
+							</div>
+
+						</fieldset>
+					</form>
+				</div>
+				
+				<div class="four column offset-by-one">
+					<h3>Some Stuff</h3>
+					
+					<p>
+						A little paragraph where we discuss some things that you might need to know, like how to get discounts.
+					</p>
+				</div>
+			</div>
+
+			<h2>Error States</h2>
+
+			<form action="#">
+				<fieldset class="labelled">
+					<legend>About You</legend>
+
+					<div class="field error">
+						<label for="field_1">First Name<strong>*</strong></label>
+						<small class="message">Error: This field is required.</small>
+						<input type="text" name="first_name" id="field_1" value="">
+						<small>A bit of helper text.</small>
+					</div>
+
+					<div class="field error">
+						<label for="field_2">Last Name</label>
+						<small class="message">Error: This field is required.</small>
+						<small>Enter your family name.</small>
+						<input type="text" name="last_name" id="field_2" value="">
+					</div>
+
+					<div class="field error">
+						<label for="field_8">Password</label>
+						<small class="message">Error: Password must be at least 8 characters long.</small>
+						<input type="password" name="password" id="field_8" value="">
+					</div>
+
+					<div class="field error">
+						<label for="field_3">T-Shirt Size</label>
+						<small class="message">Error: Sold out of this size.</small>
+						<select name="size" id="field_3">
+							<option value="Small">Small</option>
+							<option value="Medium">Medium</option>
+							<option value="Large">Large</option>
+							<option value="X-Large">X-Large</option>
+							<option value="XX-Large">XX-Large</option>
+						</select>
+					</div>
+					
+					<div class="field">
+						<input type="submit" class="button" value="Submit">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>

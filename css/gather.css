@@ -1,0 +1,425 @@
+/**
+ * Form
+ * A very basic pattern for form elements
+ *
+ * Copyright (c) 2013, Fred LeBlanc
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without 
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *  - Redistributions of source code must retain the above copyright notice, 
+ *    this list of conditions and the following disclaimer.
+ *
+ *  - Redistributions in binary form must reproduce the above copyright notice, 
+ *    this list of conditions and the following disclaimer in the documentation 
+ *    and/or other materials provided with the distribution.
+ * 
+ *  - Neither the name of the FredHQ nor the names of its contributors 
+ *    may be used to endorse or promote products derived from this software 
+ *    without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ * POSSIBILITY OF SUCH DAMAGE.
+ */
+
+form {
+	margin: 1em 0;
+}
+
+form *:focus {
+	outline-color: #38b0e8;
+}
+
+
+
+/**
+ * Standard Inputs
+ * ----------------------------------------------------------------------------
+ * Styling for inputs, select boxes, and textareas
+ */
+
+input,
+select,
+textarea,
+button {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	border-radius: 0.2em;
+	background: #ebebeb;
+	background: -moz-linear-gradient(top, #f1f1f1 0%, #ffffff 0.6em);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(0.6em,#ffffff));
+	background: -webkit-linear-gradient(top, #f1f1f1 0%,#ffffff 0.6em);
+	background: -o-linear-gradient(top, #f1f1f1 0%,#ffffff 0.6em);
+	background: -ms-linear-gradient(top, #f1f1f1 0%,#ffffff 0.6em);
+	background: linear-gradient(to bottom, #f1f1f1 0%,#ffffff 0.6em);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#ffffff',GradientType=0 );
+	-webkit-transition: outline 0.15s ease;
+	-moz-transition: outline 0.15s ease;
+	transition: outline 0.15s ease;
+	background-color: #fff;
+	width: 100%;
+	border: 1px solid #aaa;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 1em;
+	padding: 0.5em 0.65em;
+	margin: 0.2em 0 0.25em;
+	line-height: 1;
+	clear: left;
+	position: relative;
+	z-index: 1;
+	display: block;
+}
+
+select {
+	height: 2.25em;
+	padding: 0.125em 0.125em 0.125em 0.5em;
+}
+
+.lt-ie9 select {
+	height: auto;
+	padding: 0.425em 0.5em 0.5em;
+}
+
+textarea {
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+}
+
+
+/**
+ * Optional horizontal sizing for inputs, select boxes, and textareas,
+ * available options: tiny, skinny, short, medium, long, fat, full (the default)
+ */
+input.tiny,
+select.tiny,
+textarea.tiny {
+	width: 6em;
+}
+
+input.skinny,
+select.skinny,
+textarea.skinny {
+	width: 10em;
+}
+
+input.small,
+select.small,
+textarea.small {
+	width: 16em;
+}
+
+input.medium,
+select.medium,
+textarea.medium {
+	width: 20em;
+}
+
+input.large,
+select.large,
+textarea.large {
+	width: 32em;
+}
+
+input.fat,
+select.fat,
+textarea.fat {
+	width: 40em;
+}
+
+input.full,
+select.full,
+textarea.full {
+	width: 100%;
+}
+
+
+/**
+ * Optional vertical sizing for textareas,
+ * available options: none (the default), short, tall
+ */
+textarea {
+	height: 8.25em;
+	resize: none;
+}
+
+textarea.short {
+	height: 5.25em;
+}
+
+textarea.tall {
+	height: 18.75em;
+}
+
+
+/**
+ * Set focus styles
+ */
+input:focus,
+select:focus,
+textarea:focus {
+	background: #fff;
+	outline-color: #7ec3da;
+}
+
+
+/**
+ * General label styling
+ */
+label {
+	margin-bottom: 0;
+	font-weight: bold;
+	font-size: 0.875em;
+	line-height: 1.1;
+	display: inline-block;
+}
+
+
+
+/**
+ * Buttons
+ * ----------------------------------------------------------------------------
+ * Button styling
+ */
+
+.button {
+	-webkit-transition: background-color 0.24s ease, border-color 0.24s ease; 
+	-moz-transition: background-color 0.24s ease, border-color 0.24s ease; 
+	transition: background-color 0.24s ease, border-color 0.24s ease; 
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	padding: 0.4em 1.6em;
+	line-height: 1.5;
+	background: #15abe0;
+	background: -moz-linear-gradient(top, #15abe0 0%, #0892c9 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#15abe0), color-stop(100%,#0892c9));
+	background: -webkit-linear-gradient(top, #15abe0 0%,#0892c9 100%);
+	background: -o-linear-gradient(top, #15abe0 0%,#0892c9 100%);
+	background: -ms-linear-gradient(top, #15abe0 0%,#0892c9 100%);
+	background: linear-gradient(to bottom, #15abe0 0%,#0892c9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15abe0', endColorstr='#0892c9',GradientType=0 );
+	border-color: #1496bd;
+	width: auto;
+	font-weight: 500;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 0.35em;
+}
+
+.button:hover {
+	background: #48caea;
+	background: -moz-linear-gradient(top, #48caea 0%, #1aa7db 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#48caea), color-stop(100%,#1aa7db));
+	background: -webkit-linear-gradient(top, #48caea 0%,#1aa7db 100%);
+	background: -o-linear-gradient(top, #48caea 0%,#1aa7db 100%);
+	background: -ms-linear-gradient(top, #48caea 0%,#1aa7db 100%);
+	background: linear-gradient(to bottom, #48caea 0%,#1aa7db 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48caea', endColorstr='#1aa7db',GradientType=0 );	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30b2dd', endColorstr='#2398c6',GradientType=0 );
+	border-color: #3dabc6;
+}
+
+.button:first-child {
+	margin-left: 0;
+}
+
+
+
+/**
+ * Fieldsets
+ * ----------------------------------------------------------------------------
+ * Styling how fields get grouped together.
+ */
+
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 1.5em 0 0;
+}
+
+fieldset:first-child {
+	margin-top: 0;
+}
+
+legend {
+	padding: 0 0.6em;
+	margin-left: -0.5em;
+	font-size: 0.875em;
+	color: #555;
+}
+
+fieldset.labelled {
+	border: 1px solid #ddd;
+	padding: 0 1.5em 0.4em;
+}
+
+
+
+/**
+ * Fields
+ * ----------------------------------------------------------------------------
+ * General field styling
+ */
+
+.field {
+	margin: 0.5em 0 0.75em;
+	*zoom: 1;
+	text-align: left;
+}
+
+.field:before,
+.field:after {
+	content: " ";
+	display: table;
+}
+
+.field:after {
+	clear: both;
+}
+
+.field.right {
+	text-align: right;
+}
+
+.field-group {
+	clear: left;
+	list-style: none;
+	margin: 0.125em 0;
+	padding: 0;
+}
+
+.field-group li {
+	overflow: hidden;
+	margin-top: 0.125em;
+}
+
+.field-group li:first-child {
+	margin-top: 0;
+}
+
+.field.single-checkbox p,
+.field-group p {
+	margin: 0 0 0 1.6em;
+}
+
+.lt-ie9 .field.single-checkbox p,
+.lt-ie9 .field-group p {
+	margin: 0.1em 0 0 1.6em;
+}
+
+.field.single-checkbox label,
+.field-group label {
+	font-weight: normal;
+	float: none;
+	font-size: 1em;
+}
+
+
+
+/**
+ * Check-able Inputs
+ * ----------------------------------------------------------------------------
+ * Radio buttons & checkboxes
+ */
+
+input.radio,
+input.checkbox {
+	width: auto;
+	line-height: 1;
+	float: left;
+	border: none;
+	background: none;
+	padding: 0.15em 0;
+	filter: none;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+input.radio:focus,
+input.checkbox:focus {
+	outline-color: #7ec3da;
+}
+
+input.radio {
+	-webkit-appearance: radio;
+	margin: 0.25em 0.125em;
+}
+
+input.checkbox {
+	-webkit-appearance: checkbox;
+	margin: 0.3em 0.125em;
+}
+
+
+
+/**
+ * Helpers
+ * ----------------------------------------------------------------------------
+ * Helping and marking things as required
+ */
+
+label strong {
+	font-size: 1.125em;
+	line-height: 1;
+	vertical-align: -0.05em;
+	margin-left: 0.1em;
+	color: #bf3d48;
+}
+
+.field small {
+	display: block;
+	margin: 0.125em 0 0.25em;
+	font-size: 0.8125em;
+	color: #999;
+	clear: left;
+}
+
+
+
+/**
+ * Errors
+ * ----------------------------------------------------------------------------
+ * Things that need fixing
+ */
+.error label {
+	/*color: #bf3d48;*/
+}
+
+.error input,
+.error select,
+.error textarea {
+	border-color: #bf696f;
+	background: #fae9ee;
+	filter: none;
+}
+
+.error input:focus,
+.error select:focus,
+.error textarea:focus {
+	outline-color: #bf3d48;
+}
+
+.error small {
+	color: #bf3d48;
+}
+
+.error small.message {
+	font-weight: bold;
+}
