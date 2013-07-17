@@ -372,6 +372,9 @@ input.checkbox {
  * Helping and marking things as required
  */
 
+/**
+ * Required asterisks
+ */
 label strong {
 	font-size: 1.125em;
 	line-height: 1;
@@ -380,6 +383,9 @@ label strong {
 	color: #bf3d48;
 }
 
+/**
+ * Helper text, can be placed above or below the field
+ */
 .field small {
 	display: block;
 	margin: 0.125em 0 0.4em;
@@ -397,9 +403,6 @@ label strong {
  * ----------------------------------------------------------------------------
  * Things that need fixing
  */
-.error label {
-	/*color: #bf3d48;*/
-}
 
 .error input,
 .error select,
@@ -419,6 +422,9 @@ label strong {
 	color: #bf3d48;
 }
 
+/**
+ * Used to display the actual error message itself
+ */
 .error small.message {
 	font-weight: bold;
 }
