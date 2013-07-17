@@ -1,5 +1,5 @@
 /**
- * Form
+ * Gather
  * A very basic pattern for form elements
  *
  * Copyright (c) 2013, Fred LeBlanc
@@ -66,9 +66,6 @@ button {
 	background: -ms-linear-gradient(top, #f1f1f1 0%,#ffffff 0.6em);
 	background: linear-gradient(to bottom, #f1f1f1 0%,#ffffff 0.6em);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#ffffff',GradientType=0 );
-	-webkit-transition: outline 0.15s ease;
-	-moz-transition: outline 0.15s ease;
-	transition: outline 0.15s ease;
 	background-color: #fff;
 	width: 100%;
 	border: 1px solid #aaa;
@@ -385,10 +382,12 @@ label strong {
 
 .field small {
 	display: block;
-	margin: 0.125em 0 0.25em;
+	margin: 0.125em 0 0.4em;
+	padding: 0.1em 0;
 	font-size: 0.8125em;
 	color: #999;
 	clear: left;
+	line-height: 1.2;
 }
 
 
