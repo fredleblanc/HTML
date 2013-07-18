@@ -102,6 +102,8 @@
 
 .twelfth.column,
 .twelfth.columns,
+.one-twelfth.column,
+.one-twelfth.columns,
 .one.column,
 .one.columns {
 	width: 5.583333%
@@ -164,8 +166,8 @@
 
 .three-quarters.column,
 .three-quarters.columns,
-.three-forths.column,
-.three-forths.columns,
+.three-fourths.column,
+.three-fourths.columns,
 .nine.column,
 .nine.columns {
 	width: 74.25%;
@@ -195,6 +197,8 @@
  * For indenting columns.
  */
 
+.offset-by-twelfth,
+.offset-by-one-twelfth,
 .offset-by-one {
 	padding-left: 8.583333%;
 }
