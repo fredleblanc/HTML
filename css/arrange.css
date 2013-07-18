@@ -83,6 +83,21 @@
 	margin-left: 0 !important;
 }
 
+/**
+ * For reversing the order that columns get floated
+ */
+.reverse .column,
+.reverse .columns {
+	float: right;
+	margin: 0 3% 0 0;
+}
+
+.reverse .column:first-child,
+.reverse .columns:first-child {
+	margin-right: 0;
+}
+
+
 .row {
 	margin-bottom: 1.5em;
 }
