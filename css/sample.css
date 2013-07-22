@@ -14,6 +14,7 @@ body {
 	max-width: 80em;
 	width: 92%;
 	margin: 1.5em auto;
+	position: relative;
 }
 
 h1 {
@@ -69,4 +70,31 @@ div.row.large > div {
 
 div.row.x-large > div {
 	line-height: 22em;
+}
+
+.base-grid {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+	.page:hover .base-grid .column {
+		background-color: #f7f7f7;
+	}
+
+	.base-grid .column {
+		-webkit-transition: background-color 0.4s ease;
+		-moz-transition: background-color 0.4s ease;
+		transition: background-color 0.4s ease;
+		position: relative;
+		height: 100%;
+		background-color: #fff;
+	}
+
+.examples {
+	position: relative;
+	z-index: 20;
 }
