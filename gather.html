@@ -153,27 +153,29 @@
 							<div class="row">
 								<p class="field eight column">
 									<label for="field_12">City</label>
-									<input type="text" name="city" id="field_12" value="">
+									<input type="text" name="city" id="field_12" value="Amesbury" readonly>
+									<small>Readonly field</small>
 								</p>
 								<p class="field two column">
 									<label for="field_13">State</label>
 									<select name="state">
-										<option value="MA">MA</option>
+										<option value="MA" selected>MA</option>
 										<option value="NH">NH</option>
 										<option value="RI">RI</option>
 									</select>
 								</p>
 								<p class="field two column">
 									<label for="field_14">Zip</label>
-									<input type="text" name="zip" id="field_14" value="" maxlength="5">
-									<small>For US residents only.</small>
+									<input type="text" name="zip" id="field_14" value="01913" maxlength="5" disabled>
+									<small>Disabled field</small>
 								</p>
 							</div>
 							
 							<div class="row">
 								<div class="field right">
-									<input type="submit" class="button" value="Submit">
+									<input type="submit" class="button blue" value="Submit">
 									<button class="button">Submit</button>
+									<button class="button" disabled>Submit</button>
 								</div>
 							</div>
 
