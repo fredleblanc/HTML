@@ -55,9 +55,9 @@ button {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	-webkit-border-radius: 0.2em;
-	-moz-border-radius: 0.2em;
-	border-radius: 0.2em;
+	-webkit-border-radius: 0.25em;
+	-moz-border-radius: 0.25em;
+	border-radius: 0.25em;
 	background: #ebebeb;
 	background: -moz-linear-gradient(top, #f1f1f1 0%, #ffffff 0.6em);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(0.6em,#ffffff));
