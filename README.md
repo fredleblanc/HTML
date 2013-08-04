@@ -6,7 +6,7 @@ Files here are released as open-source under the [BSD license](http://opensource
 
 ## Contents
 
-- **Arrange** is a very, very basic 12-column grid system, a bit like Skeleton but percentage-based
+- [**Arrange**](https://github.com/fredhq/HTML/wiki/Arrange) is a very, very basic 12-column grid system, a bit like Skeleton but percentage-based
 - **Gather** is a lightweight form design system
 
 And that’s it for now.
