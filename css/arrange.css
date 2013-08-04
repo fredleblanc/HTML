@@ -32,6 +32,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+
 /**
  * Base Structure
  * ----------------------------------------------------------------------------
@@ -83,6 +84,39 @@
 	margin-bottom: 1.5em;
 }
 
+/**
+ * Micro-clearfix, by Nicolas Gallagher
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+.clearfix {
+	*zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/**
+ * Old-school clearing elements
+ */
+hr.clear,
+br.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 0;
+	height: 0;
+	border: 0;
+}
+
 
 /**
  * Grid Structure
@@ -115,6 +149,8 @@
 	width: 14.166667%;
 }
 
+.fourth.column,
+.fourth.columns,
 .quarter.column,
 .quarter.columns,
 .one-quarter.column,
@@ -356,9 +392,8 @@
 }
 
 
-
 /**
- * Reversing
+ * Reversing (optional)
  * ----------------------------------------------------------------------------
  * Reversing the order that columns get floated
  */
@@ -390,7 +425,6 @@
 .reverse .offset-by-one-twelfth.columns:first-child,
 .reverse .offset-by-one.column:first-child,
 .reverse .offset-by-one.columns:first-child {
-	margin-left: 0 !important;
 	margin-right: 8.583333% !important;
 }
 
@@ -410,7 +444,6 @@
 .reverse .offset-by-one-sixth.columns:first-child,
 .reverse .offset-by-two.column:first-child,
 .reverse .offset-by-two.columns:first-child {
-	margin-left: 0 !important;
 	margin-right: 17.166667% !important;
 }
 
@@ -434,7 +467,6 @@
 .reverse .offset-by-one-fourth.columns:first-child,
 .reverse .offset-by-three.column:first-child,
 .reverse .offset-by-three.columns:first-child {
-	margin-left: 0 !important;
 	margin-right: 25.75% !important;
 }
 
@@ -454,7 +486,6 @@
 .reverse .offset-by-one-third.columns:first-child,
 .reverse .offset-by-four.column:first-child,
 .reverse .offset-by-four.columns:first-child {
-	margin-left: 0 !important;
 	margin-right: 34.333333% !important;
 }
 
@@ -466,7 +497,6 @@
 
 .reverse .offset-by-five.column:first-child,
 .reverse .offset-by-five.columns:first-child {
-	margin-left: 0 !important;
 	margin-right: 42.916667% !important;
 }
 
@@ -486,7 +516,6 @@
 .reverse .offset-by-one-half.columns:first-child,
 .reverse .offset-by-six.column:first-child,
 .reverse .offset-by-six.columns:first-child {
-	margin-left: 0 !important;
 	margin-right: 51.5% !important;
 }
 
@@ -498,7 +527,6 @@
 
 .reverse .offset-by-seven.column:first-child,
 .reverse .offset-by-seven.columns:first-child {
-	margin-left: 0 !important;
 	margin-right: 60.083333% !important;
 }
 
@@ -514,7 +542,6 @@
 .reverse .offset-by-two-thirds.columns:first-child,
 .reverse .offset-by-eight.column:first-child,
 .reverse .offset-by-eight.columns:first-child {
-	margin-left: 0 !important;
 	margin-right: 68.666667% !important;
 }
 
@@ -534,7 +561,6 @@
 .reverse .offset-by-three-fourths.columns:first-child,
 .reverse .offset-by-nine.column:first-child,
 .reverse .offset-by-nine.columns:first-child {
-	margin-left: 0 !important;
 	margin-right: 77.25% !important;
 }
 
@@ -546,7 +572,6 @@
 
 .reverse .offset-by-ten.column:first-child,
 .reverse .offset-by-ten.columns:first-child {
-	margin-left: 0 !important;
 	margin-right: 85.833333% !important;
 }
 
@@ -558,40 +583,413 @@
 
 
 /**
- * Structure Helpers
+ * Off-Grid Even Column Sets (optional)
  * ----------------------------------------------------------------------------
- * Because sometimes floating elements will get in the way.
+ * Because sometimes you need to go off-the-grid
  */
 
 /**
- * Micro-clearfix, by Nicolas Gallagher
- * http://nicolasgallagher.com/micro-clearfix-hack/
+ * 1/5
  */
-.clearfix {
-	*zoom: 1;
+.fifth.column,
+.fifth.columns,
+.one-fifth.column,
+.one-fifth.columns {
+	width: 17.6%
 }
 
-.clearfix:before,
-.clearfix:after {
-	content: " ";
-	display: table;
+.two-fifths.column,
+.two-fifths.columns {
+	width: 38.2%
 }
 
-.clearfix:after {
-	clear: both;
+.three-fifths.column,
+.three-fifths.columns {
+	width: 58.8%
+}
+
+.four-fifths.column,
+.four-fifths.columns {
+	width: 79.4%
+}
+
+.offset-by-fifth.column,
+.offset-by-fifth.columns,
+.offset-by-one-fifth.column,
+.offset-by-one-fifth.columns {
+	margin-left: 20.6% !important;
+}
+
+.offset-by-fifth.column:first-child,
+.offset-by-fifth.columns:first-child,
+.offset-by-one-fifth.column:first-child,
+.offset-by-one-fifth.columns:first-child {
+	margin-left: 17.6% !important;
+}
+
+.offset-by-two-fifths.column,
+.offset-by-two-fifths.columns {
+	margin-left: 44.2% !important;
+}
+
+.offset-by-two-fifths.column:first-child,
+.offset-by-two-fifths.columns:first-child {
+	margin-left: 41.2% !important;
+}
+
+.offset-by-three-fifths.column,
+.offset-by-three-fifths.columns {
+	margin-left: 64.8% !important;
+}
+
+.offset-by-three-fifths.column:first-child,
+.offset-by-three-fifths.columns:first-child {
+	margin-left: 61.8% !important;
+}
+
+.offset-by-four-fifths.column,
+.offset-by-four-fifths.columns {
+	margin-left: 85.4% !important;
+}
+
+.offset-by-four-fifths.column:first-child,
+.offset-by-four-fifths.columns:first-child {
+	margin-left: 82.4% !important;
+}
+
+/* reverse offsets */
+.reverse .offset-by-fifth.column,
+.reverse .offset-by-fifth.columns,
+.reverse .offset-by-one-fifth.column,
+.reverse .offset-by-one-fifth.columns {
+	margin-left: 0 !important;
+	margin-right: 20.6% !important;
+}
+
+.reverse .offset-by-fifth.column:first-child,
+.reverse .offset-by-fifth.columns:first-child,
+.reverse .offset-by-one-fifth.column:first-child,
+.reverse .offset-by-one-fifth.columns:first-child {
+	margin-right: 17.6% !important;
+}
+
+.reverse .offset-by-two-fifths.column,
+.reverse .offset-by-two-fifths.columns {
+	margin-left: 0 !important;
+	margin-right: 41.2% !important;
+}
+
+.reverse .offset-by-two-fifths.column:first-child,
+.reverse .offset-by-two-fifths.columns:first-child {
+	margin-right: 38.2% !important;
+}
+
+.reverse .offset-by-three-fifths.column,
+.reverse .offset-by-three-fifths.columns {
+	margin-left: 0 !important;
+	margin-right: 61.8% !important;
+}
+
+.reverse .offset-by-three-fifths.column:first-child,
+.reverse .offset-by-three-fifths.columns:first-child {
+	margin-right: 58.8% !important;
+}
+
+.reverse .offset-by-four-fifths.column,
+.reverse .offset-by-four-fifths.columns {
+	margin-left: 0 !important;
+	margin-right: 82.4% !important;
+}
+
+.reverse .offset-by-four-fifths.column:first-child,
+.reverse .offset-by-four-fifths.columns:first-child {
+	margin-right: 79.4% !important;
 }
 
 /**
- * This class is best used width <br> or <hr>
+ * 1/7
  */
-.clear {
-	clear: both;
-	display: block;
-	overflow: hidden;
-	visibility: hidden;
-	margin: 0;
-	padding: 0;
-	width: 0;
-	height: 0;
-	border: 0;
+.seventh.column,
+.seventh.columns,
+.one-seventh.column,
+.one-seventh.columns {
+	width: 11.71429%
+}
+
+.two-sevenths.column,
+.two-sevenths.columns {
+	width: 26.42857%
+}
+
+.three-sevenths.column,
+.three-sevenths.columns {
+	width: 41.14286%
+}
+
+.four-sevenths.column,
+.four-sevenths.columns {
+	width: 55.85714%
+}
+
+.five-sevenths.column,
+.five-sevenths.columns {
+	width: 70.57143%
+}
+
+.six-sevenths.column,
+.six-sevenths.columns {
+	width: 85.28571%
+}
+
+.offset-by-seventh.column,
+.offset-by-seventh.columns,
+.offset-by-one-seventh.column,
+.offset-by-one-seventh.columns {
+	margin-left: 14.71429% !important;
+}
+
+.offset-by-seventh.column:first-child,
+.offset-by-seventh.columns:first-child,
+.offset-by-one-seventh.column:first-child,
+.offset-by-one-seventh.columns:first-child {
+	margin-left: 11.71429% !important;
+}
+
+.offset-by-two-sevenths.column,
+.offset-by-two-sevenths.columns {
+	margin-left: 29.42857% !important;
+}
+
+.offset-by-two-sevenths.column:first-child,
+.offset-by-two-sevenths.columns:first-child {
+	margin-left: 26.42857% !important;
+}
+
+.offset-by-three-sevenths.column,
+.offset-by-three-sevenths.columns {
+	margin-left: 44.14286% !important;
+}
+
+.offset-by-three-sevenths.column:first-child,
+.offset-by-three-sevenths.columns:first-child {
+	margin-left: 41.14286% !important;
+}
+
+.offset-by-four-sevenths.column,
+.offset-by-four-sevenths.columns {
+	margin-left: 58.85714% !important;
+}
+
+.offset-by-four-sevenths.column:first-child,
+.offset-by-four-sevenths.columns:first-child {
+	margin-left: 55.85714% !important;
+}
+
+.offset-by-five-sevenths.column,
+.offset-by-five-sevenths.columns {
+	margin-left: 73.57143% !important;
+}
+
+.offset-by-five-sevenths.column:first-child,
+.offset-by-five-sevenths.columns:first-child {
+	margin-left: 70.57143% !important;
+}
+
+.offset-by-six-sevenths.column,
+.offset-by-six-sevenths.columns {
+	margin-left: 88.28571% !important;
+}
+
+.offset-by-six-sevenths.column:first-child,
+.offset-by-six-sevenths.columns:first-child {
+	margin-left: 85.28571% !important;
+}
+
+/* reverse offsets */
+.reverse .offset-by-seventh.column,
+.reverse .offset-by-seventh.columns,
+.reverse .offset-by-one-seventh.column,
+.reverse .offset-by-one-seventh.columns {
+	margin-left: 0 !important;
+	margin-right: 14.71429% !important;
+}
+
+.reverse .offset-by-seventh.column:first-child,
+.reverse .offset-by-seventh.columns:first-child,
+.reverse .offset-by-one-seventh.column:first-child,
+.reverse .offset-by-one-seventh.columns:first-child {
+	margin-right: 11.71429% !important;
+}
+
+.reverse .offset-by-two-sevenths.column,
+.reverse .offset-by-two-sevenths.columns {
+	margin-left: 0 !important;
+	margin-right: 29.42857% !important;
+}
+
+.reverse .offset-by-two-sevenths.column:first-child,
+.reverse .offset-by-two-sevenths.columns:first-child {
+	margin-right: 26.42857% !important;
+}
+
+.reverse .offset-by-three-sevenths.column,
+.reverse .offset-by-three-sevenths.columns {
+	margin-left: 0 !important;
+	margin-right: 44.14286% !important;
+}
+
+.reverse .offset-by-three-sevenths.column:first-child,
+.reverse .offset-by-three-sevenths.columns:first-child {
+	margin-right: 41.14286% !important;
+}
+
+.reverse .offset-by-four-sevenths.column,
+.reverse .offset-by-four-sevenths.columns {
+	margin-left: 0 !important;
+	margin-right: 58.85714% !important;
+}
+
+.reverse .offset-by-four-sevenths.column:first-child,
+.reverse .offset-by-four-sevenths.columns:first-child {
+	margin-right: 55.85714% !important;
+}
+
+.reverse .offset-by-five-sevenths.column,
+.reverse .offset-by-five-sevenths.columns {
+	margin-left: 0 !important;
+	margin-right: 73.57143% !important;
+}
+
+.reverse .offset-by-five-sevenths.column:first-child,
+.reverse .offset-by-five-sevenths.columns:first-child {
+	margin-right: 70.57143% !important;
+}
+
+.reverse .offset-by-six-sevenths.column,
+.reverse .offset-by-six-sevenths.columns {
+	margin-left: 0 !important;
+	margin-right: 88.28571% !important;
+}
+
+.reverse .offset-by-six-sevenths.column:first-child,
+.reverse .offset-by-six-sevenths.columns:first-child {
+	margin-right: 85.28571% !important;
+}
+
+/**
+ * 1/8
+ */
+.eighth.column,
+.eighth.columns,
+.one-eighth.column,
+.one-eighth.columns {
+	width: 9.87500%;
+}
+
+.three-eighths.column,
+.three-eighths.columns {
+	width: 35.62500%;
+}
+
+.five-eighths.column,
+.five-eighths.columns {
+	width: 61.37500%;
+}
+
+.seven-eighths.column,
+.seven-eighths.columns {
+	width: 87.12500%
+}
+
+.offset-by-eighth.column,
+.offset-by-eighth.columns,
+.offset-by-one-eighth.column,
+.offset-by-one-eighth.columns {
+	margin-left: 12.87500%;
+}
+
+.offset-by-eighth.column:first-child,
+.offset-by-eighth.columns:first-child,
+.offset-by-one-eighth.column:first-child,
+.offset-by-one-eighth.columns:first-child {
+	margin-left: 9.87500%;
+}
+
+.offset-by-three-eighths.column,
+.offset-by-three-eighths.columns {
+	margin-left: 38.62500%;
+}
+
+.offset-by-three-eighths.column:first-child,
+.offset-by-three-eighths.columns:first-child {
+	margin-left: 35.62500%;
+}
+
+.offset-by-five-eighths.column,
+.offset-by-five-eighths.columns {
+	margin-left: 64.37500%;
+}
+
+.offset-by-five-eighths.column:first-child,
+.offset-by-five-eighths.columns:first-child {
+	margin-left: 61.37500%;
+}
+
+.offset-by-seven-eighths.column,
+.offset-by-seven-eighths.columns {
+	margin-left: 90.12500%;
+}
+
+.offset-by-seven-eighths.column:first-child,
+.offset-by-seven-eighths.columns:first-child {
+	margin-left: 87.12500%;
+}
+
+/* reverse offsets */
+.reverse .offset-by-eighth.column,
+.reverse .offset-by-eighth.columns,
+.reverse .offset-by-one-eighth.column,
+.reverse .offset-by-one-eighth.columns {
+	margin-left: 0 !important;
+	margin-right: 12.87500% !important;
+}
+
+.reverse .offset-by-eighth.column:first-child,
+.reverse .offset-by-eighth.columns:first-child,
+.reverse .offset-by-one-eighth.column:first-child,
+.reverse .offset-by-one-eighth.columns:first-child {
+	margin-right: 9.87500% !important;
+}
+
+.reverse .offset-by-three-eighths.column,
+.reverse .offset-by-three-eighths.columns {
+	margin-left: 0 !important;
+	margin-right: 38.62500% !important;
+}
+
+.reverse .offset-by-three-eighths.column:first-child,
+.reverse .offset-by-three-eighths.columns:first-child {
+	margin-right: 35.62500% !important;
+}
+
+.reverse .offset-by-five-eighths.column,
+.reverse .offset-by-five-eighths.columns {
+	margin-left: 0 !important;
+	margin-right: 64.37500% !important;
+}
+
+.reverse .offset-by-five-eighths.column:first-child,
+.reverse .offset-by-five-eighths.columns:first-child {
+	margin-right: 61.37500% !important;
+}
+
+.reverse .offset-by-seven-eighths.column,
+.reverse .offset-by-seven-eighths.columns {
+	margin-left: 0 !important;
+	margin-right: 90.12500% !important;
+}
+
+.reverse .offset-by-seven-eighths.column:first-child,
+.reverse .offset-by-seven-eighths.columns:first-child {
+	margin-right: 87.12500% !important;
 }
