@@ -82,7 +82,7 @@ button {
 
 select {
 	height: 2.25em;
-	padding: 0.125em 0.125em 0.125em 0.5em;
+	padding: 0.375em 0.125em 0.375em 0.5em;
 }
 
 .lt-ie9 select {
