@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-	margin: 1.25em 0 0.5em;
+	margin: 1.5em 0 0.75em;
 }
 
 h3 {
@@ -34,6 +34,10 @@ h3 {
 a {
 	color: #15abe0;
 	text-decoration: none;
+}
+
+div.row {
+	margin-bottom: 1.5em;
 }
 
 fieldset .row {
@@ -50,6 +54,33 @@ div.row > div {
 	text-align: center;
 	overflow: hidden;
 	white-space: nowrap;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+div.no-gutters > div {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+div.row.no-gutters > div:first-child {
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+div.row.no-gutters > div:last-child {
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-bottomright: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
 }
 
 div.row > div.field {
@@ -71,28 +102,6 @@ div.row.large > div {
 div.row.x-large > div {
 	line-height: 22em;
 }
-
-.base-grid {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 10;
-}
-
-	.page:hover .base-grid .column {
-		background-color: #f7f7f7;
-	}
-
-	.base-grid .column {
-		-webkit-transition: background-color 0.4s ease;
-		-moz-transition: background-color 0.4s ease;
-		transition: background-color 0.4s ease;
-		position: relative;
-		height: 100%;
-		background-color: #fff;
-	}
 
 .examples {
 	position: relative;
