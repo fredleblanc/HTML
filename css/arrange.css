@@ -87,14 +87,14 @@
 
 .column:first-child,
 .columns:first-child {
-	margin-left: 0 !important;
+	margin-left: 0;
 }
 
 /**
  * Remove the gutters
  */
-.gutterless .column,
-.gutterless .columns {
+.gutterless > .column,
+.gutterless > .columns {
 	margin: 0;
 }
 
@@ -232,7 +232,7 @@ br.clear {
 .offset-by-one-twelfth.columns,
 .offset-by-one.column,
 .offset-by-one.columns {
-	margin-left: 12.6667% !important;
+	margin-left: 12.6667%;
 }
 
 .offset-by-twelfth.column:first-child,
@@ -241,7 +241,7 @@ br.clear {
 .offset-by-one-twelfth.columns:first-child,
 .offset-by-one.column:first-child,
 .offset-by-one.columns:first-child {
-	margin-left: 8.6667% !important;
+	margin-left: 8.6667%;
 }
 
 .offset-by-sixth.column,
@@ -250,7 +250,7 @@ br.clear {
 .offset-by-one-sixth.columns,
 .offset-by-two.column,
 .offset-by-two.columns {
-	margin-left: 21.3333% !important;
+	margin-left: 21.3333%;
 }
 
 .offset-by-sixth.column:first-child,
@@ -259,7 +259,7 @@ br.clear {
 .offset-by-one-sixth.columns:first-child,
 .offset-by-two.column:first-child,
 .offset-by-two.columns:first-child {
-	margin-left: 17.3333% !important;
+	margin-left: 17.3333%;
 }
 
 .offset-by-quarter.column,
@@ -270,7 +270,7 @@ br.clear {
 .offset-by-one-fourth.columns,
 .offset-by-three.column,
 .offset-by-three.columns {
-	margin-left: 30% !important;
+	margin-left: 30%;
 }
 
 .offset-by-quarter.column:first-child,
@@ -281,7 +281,7 @@ br.clear {
 .offset-by-one-fourth.columns:first-child,
 .offset-by-three.column:first-child,
 .offset-by-three.columns:first-child {
-	margin-left: 26% !important;
+	margin-left: 26%;
 }
 
 .offset-by-third.column,
@@ -290,7 +290,7 @@ br.clear {
 .offset-by-one-third.columns,
 .offset-by-four.column,
 .offset-by-four.columns {
-	margin-left: 38.6667% !important;
+	margin-left: 38.6667%;
 }
 
 .offset-by-third.column:first-child,
@@ -299,17 +299,17 @@ br.clear {
 .offset-by-one-third.columns:first-child,
 .offset-by-four.column:first-child,
 .offset-by-four.columns:first-child {
-	margin-left: 34.6667% !important;
+	margin-left: 34.6667%;
 }
 
 .offset-by-five.column,
 .offset-by-five.columns {
-	margin-left: 47.3333% !important;
+	margin-left: 47.3333%;
 }
 
 .offset-by-five.column:first-child,
 .offset-by-five.columns:first-child {
-	margin-left: 43.3333% !important;
+	margin-left: 43.3333%;
 }
 
 .offset-by-half.column,
@@ -318,7 +318,7 @@ br.clear {
 .offset-by-one-half.columns,
 .offset-by-six.column,
 .offset-by-six.columns {
-	margin-left: 56% !important;
+	margin-left: 56%;
 }
 
 .offset-by-half.column:first-child,
@@ -327,31 +327,31 @@ br.clear {
 .offset-by-one-half.columns:first-child,
 .offset-by-six.column:first-child,
 .offset-by-six.columns:first-child {
-	margin-left: 52% !important;
+	margin-left: 52%;
 }
 
 .offset-by-seven.column,
 .offset-by-seven.columns {
-	margin-left: 64.6667% !important;
+	margin-left: 64.6667%;
 }
 
 .offset-by-seven.column:first-child,
 .offset-by-seven.columns:first-child {
-	margin-left: 60.6667% !important;
+	margin-left: 60.6667%;
 }
 
 .offset-by-two-thirds.column,
 .offset-by-two-thirds.columns,
 .offset-by-eight.column,
 .offset-by-eight.columns {
-	margin-left: 73.3333% !important;
+	margin-left: 73.3333%;
 }
 
 .offset-by-two-thirds.column:first-child,
 .offset-by-two-thirds.columns:first-child,
 .offset-by-eight.column:first-child,
 .offset-by-eight.columns:first-child {
-	margin-left: 69.3333% !important;
+	margin-left: 69.3333%;
 }
 
 .offset-by-three-quarters.column,
@@ -360,7 +360,7 @@ br.clear {
 .offset-by-three-fourths.columns,
 .offset-by-nine.column,
 .offset-by-nine.columns {
-	margin-left: 82% !important;
+	margin-left: 82%;
 }
 
 .offset-by-three-quarters.column:first-child,
@@ -369,22 +369,22 @@ br.clear {
 .offset-by-three-fourths.columns:first-child,
 .offset-by-nine.column:first-child,
 .offset-by-nine.columns:first-child {
-	margin-left: 78% !important;
+	margin-left: 78%;
 }
 
 .offset-by-ten.column,
 .offset-by-ten.columns {
-	margin-left: 90.6667% !important;
+	margin-left: 90.6667%;
 }
 
 .offset-by-ten.column:first-child,
 .offset-by-ten.columns:first-child {
-	margin-left: 86.6667% !important;
+	margin-left: 86.6667%;
 }
 
 .offset-by-eleven.column:first-child,
 .offset-by-eleven.columns:first-child {
-	margin-left: 95.3333% !important;
+	margin-left: 95.3333%;
 }
 
 
@@ -509,7 +509,7 @@ br.clear {
 .gutterless > .offset-by-one-twelfth.columns,
 .gutterless > .offset-by-one.column,
 .gutterless > .offset-by-one.columns {
-	margin-left: 8.3333% !important;
+	margin-left: 8.3333%;
 }
 
 .gutterless > .offset-by-sixth.column,
@@ -518,7 +518,7 @@ br.clear {
 .gutterless > .offset-by-one-sixth.columns,
 .gutterless > .offset-by-two.column,
 .gutterless > .offset-by-two.columns {
-	margin-left: 16.6667% !important;
+	margin-left: 16.6667%;
 }
 
 .gutterless > .offset-by-quarter.column,
@@ -529,7 +529,7 @@ br.clear {
 .gutterless > .offset-by-one-fourth.columns,
 .gutterless > .offset-by-three.column,
 .gutterless > .offset-by-three.columns {
-	margin-left: 25% !important;
+	margin-left: 25%;
 }
 
 .gutterless > .offset-by-third.column,
@@ -538,12 +538,12 @@ br.clear {
 .gutterless > .offset-by-one-third.columns,
 .gutterless > .offset-by-four.column,
 .gutterless > .offset-by-four.columns {
-	margin-left: 33.3333% !important;
+	margin-left: 33.3333%;
 }
 
 .gutterless > .offset-by-five.column,
 .gutterless > .offset-by-five.columns {
-	margin-left: 41.6667% !important;
+	margin-left: 41.6667%;
 }
 
 .gutterless > .offset-by-half.column,
@@ -552,19 +552,19 @@ br.clear {
 .gutterless > .offset-by-one-half.columns,
 .gutterless > .offset-by-six.column,
 .gutterless > .offset-by-six.columns {
-	margin-left: 50% !important;
+	margin-left: 50%;
 }
 
 .gutterless > .offset-by-seven.column,
 .gutterless > .offset-by-seven.columns {
-	margin-left: 58.3333% !important;
+	margin-left: 58.3333%;
 }
 
 .gutterless > .offset-by-two-thirds.column,
 .gutterless > .offset-by-two-thirds.columns,
 .gutterless > .offset-by-eight.column,
 .gutterless > .offset-by-eight.columns {
-	margin-left: 66.6667% !important;
+	margin-left: 66.6667%;
 }
 
 .gutterless > .offset-by-three-quarters.column,
@@ -573,17 +573,17 @@ br.clear {
 .gutterless > .offset-by-three-fourths.columns,
 .gutterless > .offset-by-nine.column,
 .gutterless > .offset-by-nine.columns {
-	margin-left: 75% !important;
+	margin-left: 75%;
 }
 
 .gutterless > .offset-by-ten.column,
 .gutterless > .offset-by-ten.columns {
-	margin-left: 83.3333% !important;
+	margin-left: 83.3333%;
 }
 
 .gutterless > .offset-by-eleven.column,
 .gutterless > .offset-by-eleven.columns {
-	margin-left: 91.6667% !important;
+	margin-left: 91.6667%;
 }
 
 
@@ -613,8 +613,8 @@ br.clear {
 .reverse > .offset-by-one-twelfth.columns,
 .reverse > .offset-by-one.column,
 .reverse > .offset-by-one.columns {
-	margin-left: 0 !important;
-	margin-right: 12.6667% !important;
+	margin-left: 0;
+	margin-right: 12.6667%;
 }
 
 .reverse > .offset-by-twelfth.column:first-child,
@@ -623,7 +623,7 @@ br.clear {
 .reverse > .offset-by-one-twelfth.columns:first-child,
 .reverse > .offset-by-one.column:first-child,
 .reverse > .offset-by-one.columns:first-child {
-	margin-right: 8.6667% !important;
+	margin-right: 8.6667%;
 }
 
 .reverse > .offset-by-sixth.column,
@@ -632,8 +632,8 @@ br.clear {
 .reverse > .offset-by-one-sixth.columns,
 .reverse > .offset-by-two.column,
 .reverse > .offset-by-two.columns {
-	margin-left: 0 !important;
-	margin-right: 21.3333% !important;
+	margin-left: 0;
+	margin-right: 21.3333%;
 }
 
 .reverse > .offset-by-sixth.column:first-child,
@@ -642,7 +642,7 @@ br.clear {
 .reverse > .offset-by-one-sixth.columns:first-child,
 .reverse > .offset-by-two.column:first-child,
 .reverse > .offset-by-two.columns:first-child {
-	margin-right: 17.3333% !important;
+	margin-right: 17.3333%;
 }
 
 .reverse > .offset-by-quarter.column,
@@ -653,8 +653,8 @@ br.clear {
 .reverse > .offset-by-one-fourth.columns,
 .reverse > .offset-by-three.column,
 .reverse > .offset-by-three.columns {
-	margin-left: 0 !important;
-	margin-right: 30% !important;
+	margin-left: 0;
+	margin-right: 30%;
 }
 
 .reverse > .offset-by-quarter.column:first-child,
@@ -665,7 +665,7 @@ br.clear {
 .reverse > .offset-by-one-fourth.columns:first-child,
 .reverse > .offset-by-three.column:first-child,
 .reverse > .offset-by-three.columns:first-child {
-	margin-right: 26% !important;
+	margin-right: 26%;
 }
 
 .reverse > .offset-by-third.column,
@@ -674,8 +674,8 @@ br.clear {
 .reverse > .offset-by-one-third.columns,
 .reverse > .offset-by-four.column,
 .reverse > .offset-by-four.columns {
-	margin-left: 0 !important;
-	margin-right: 38.6667% !important;
+	margin-left: 0;
+	margin-right: 38.6667%;
 }
 
 .reverse > .offset-by-third.column:first-child,
@@ -684,18 +684,18 @@ br.clear {
 .reverse > .offset-by-one-third.columns:first-child,
 .reverse > .offset-by-four.column:first-child,
 .reverse > .offset-by-four.columns:first-child {
-	margin-right: 34.6667% !important;
+	margin-right: 34.6667%;
 }
 
 .reverse > .offset-by-five.column,
 .reverse > .offset-by-five.columns {
-	margin-left: 0 !important;
-	margin-right: 47.3333% !important;
+	margin-left: 0;
+	margin-right: 47.3333%;
 }
 
 .reverse > .offset-by-five.column:first-child,
 .reverse > .offset-by-five.columns:first-child {
-	margin-right: 43.3333% !important;
+	margin-right: 43.3333%;
 }
 
 .reverse > .offset-by-half.column,
@@ -704,8 +704,8 @@ br.clear {
 .reverse > .offset-by-one-half.columns,
 .reverse > .offset-by-six.column,
 .reverse > .offset-by-six.columns {
-	margin-left: 0 !important;
-	margin-right: 56% !important;
+	margin-left: 0;
+	margin-right: 56%;
 }
 
 .reverse > .offset-by-half.column:first-child,
@@ -714,33 +714,33 @@ br.clear {
 .reverse > .offset-by-one-half.columns:first-child,
 .reverse > .offset-by-six.column:first-child,
 .reverse > .offset-by-six.columns:first-child {
-	margin-right: 52% !important;
+	margin-right: 52%;
 }
 
 .reverse > .offset-by-seven.column,
 .reverse > .offset-by-seven.columns {
-	margin-left: 0 !important;
-	margin-right: 64.6667% !important;
+	margin-left: 0;
+	margin-right: 64.6667%;
 }
 
 .reverse > .offset-by-seven.column:first-child,
 .reverse > .offset-by-seven.columns:first-child {
-	margin-right: 60.6667% !important;
+	margin-right: 60.6667%;
 }
 
 .reverse > .offset-by-two-thirds.column,
 .reverse > .offset-by-two-thirds.columns,
 .reverse > .offset-by-eight.column,
 .reverse > .offset-by-eight.columns {
-	margin-left: 0 !important;
-	margin-right: 73.3333% !important;
+	margin-left: 0;
+	margin-right: 73.3333%;
 }
 
 .reverse > .offset-by-two-thirds.column:first-child,
 .reverse > .offset-by-two-thirds.columns:first-child,
 .reverse > .offset-by-eight.column:first-child,
 .reverse > .offset-by-eight.columns:first-child {
-	margin-right: 69.3333% !important;
+	margin-right: 69.3333%;
 }
 
 .reverse > .offset-by-three-quarters.column,
@@ -749,8 +749,8 @@ br.clear {
 .reverse > .offset-by-three-fourths.columns,
 .reverse > .offset-by-nine.column,
 .reverse > .offset-by-nine.columns {
-	margin-left: 0 !important;
-	margin-right: 82% !important;
+	margin-left: 0;
+	margin-right: 82%;
 }
 
 .reverse > .offset-by-three-quarters.column:first-child,
@@ -759,24 +759,24 @@ br.clear {
 .reverse > .offset-by-three-fourths.columns:first-child,
 .reverse > .offset-by-nine.column:first-child,
 .reverse > .offset-by-nine.columns:first-child {
-	margin-right: 78% !important;
+	margin-right: 78%;
 }
 
 .reverse > .offset-by-ten.column,
 .reverse > .offset-by-ten.columns {
-	margin-left: 0 !important;
-	margin-right: 90.6667% !important;
+	margin-left: 0;
+	margin-right: 90.6667%;
 }
 
 .reverse > .offset-by-ten.column:first-child,
 .reverse > .offset-by-ten.columns:first-child {
-	margin-right: 86.6667% !important;
+	margin-right: 86.6667%;
 }
 
 .reverse > .offset-by-eleven.column:first-child,
 .reverse > .offset-by-eleven.columns:first-child {
-	margin-left: 0 !important;
-	margin-right: 95.3333% !important;
+	margin-left: 0;
+	margin-right: 95.3333%;
 }
 
 
@@ -795,8 +795,8 @@ br.clear {
 .gutterless.reverse > .offset-by-one-twelfth.columns,
 .gutterless.reverse > .offset-by-one.column,
 .gutterless.reverse > .offset-by-one.columns {
-	margin-left: 0 !important;
-	margin-right: 8.3333% !important;
+	margin-left: 0;
+	margin-right: 8.3333%;
 }
 
 .gutterless.reverse > .offset-by-sixth.column,
@@ -805,8 +805,8 @@ br.clear {
 .gutterless.reverse > .offset-by-one-sixth.columns,
 .gutterless.reverse > .offset-by-two.column,
 .gutterless.reverse > .offset-by-two.columns {
-	margin-left: 0 !important;
-	margin-right: 16.6667% !important;
+	margin-left: 0;
+	margin-right: 16.6667%;
 }
 
 .gutterless.reverse > .offset-by-quarter.column,
@@ -817,8 +817,8 @@ br.clear {
 .gutterless.reverse > .offset-by-one-fourth.columns,
 .gutterless.reverse > .offset-by-three.column,
 .gutterless.reverse > .offset-by-three.columns {
-	margin-left: 0 !important;
-	margin-right: 25% !important;
+	margin-left: 0;
+	margin-right: 25%;
 }
 
 .gutterless.reverse > .offset-by-third.column,
@@ -827,14 +827,14 @@ br.clear {
 .gutterless.reverse > .offset-by-one-third.columns,
 .gutterless.reverse > .offset-by-four.column,
 .gutterless.reverse > .offset-by-four.columns {
-	margin-left: 0 !important;
-	margin-right: 33.3333% !important;
+	margin-left: 0;
+	margin-right: 33.3333%;
 }
 
 .gutterless.reverse > .offset-by-five.column,
 .gutterless.reverse > .offset-by-five.columns {
-	margin-left: 0 !important;
-	margin-right: 41.6667% !important;
+	margin-left: 0;
+	margin-right: 41.6667%;
 }
 
 .gutterless.reverse > .offset-by-half.column,
@@ -843,22 +843,22 @@ br.clear {
 .gutterless.reverse > .offset-by-one-half.columns,
 .gutterless.reverse > .offset-by-six.column,
 .gutterless.reverse > .offset-by-six.columns {
-	margin-left: 0 !important;
-	margin-right: 50% !important;
+	margin-left: 0;
+	margin-right: 50%;
 }
 
 .gutterless.reverse > .offset-by-seven.column,
 .gutterless.reverse > .offset-by-seven.columns {
-	margin-left: 0 !important;
-	margin-right: 58.3333% !important;
+	margin-left: 0;
+	margin-right: 58.3333%;
 }
 
 .gutterless.reverse > .offset-by-two-thirds.column,
 .gutterless.reverse > .offset-by-two-thirds.columns,
 .gutterless.reverse > .offset-by-eight.column,
 .gutterless.reverse > .offset-by-eight.columns {
-	margin-left: 0 !important;
-	margin-right: 66.6667% !important;
+	margin-left: 0;
+	margin-right: 66.6667%;
 }
 
 .gutterless.reverse > .offset-by-three-quarters.column,
@@ -867,20 +867,20 @@ br.clear {
 .gutterless.reverse > .offset-by-three-fourths.columns,
 .gutterless.reverse > .offset-by-nine.column,
 .gutterless.reverse > .offset-by-nine.columns {
-	margin-left: 0 !important;
-	margin-right: 75% !important;
+	margin-left: 0;
+	margin-right: 75%;
 }
 
 .gutterless.reverse > .offset-by-ten.column,
 .gutterless.reverse > .offset-by-ten.columns {
-	margin-left: 0 !important;
-	margin-right: 83.3333% !important;
+	margin-left: 0;
+	margin-right: 83.3333%;
 }
 
 .gutterless.reverse > .offset-by-eleven.column,
 .gutterless.reverse > .offset-by-eleven.columns {
-	margin-left: 0 !important;
-	margin-right: 91.6667% !important;
+	margin-left: 0;
+	margin-right: 91.6667%;
 }
 
 
@@ -922,39 +922,39 @@ br.clear {
 .offset-by-fifth.columns,
 .offset-by-one-fifth.column,
 .offset-by-one-fifth.columns {
-	margin-left: 24.8% !important;
+	margin-left: 24.8%;
 }
 
 .offset-by-fifth.column:first-child,
 .offset-by-fifth.columns:first-child,
 .offset-by-one-fifth.column:first-child,
 .offset-by-one-fifth.columns:first-child {
-	margin-left: 20.8% !important;
+	margin-left: 20.8%;
 }
 
 .offset-by-two-fifths.column,
 .offset-by-two-fifths.columns {
-	margin-left: 45.6% !important;
+	margin-left: 45.6%;
 }
 
 .offset-by-two-fifths.column:first-child,
 .offset-by-two-fifths.columns:first-child {
-	margin-left: 41.6% !important;
+	margin-left: 41.6%;
 }
 
 .offset-by-three-fifths.column,
 .offset-by-three-fifths.columns {
-	margin-left: 66.4% !important;
+	margin-left: 66.4%;
 }
 
 .offset-by-three-fifths.column:first-child,
 .offset-by-three-fifths.columns:first-child {
-	margin-left: 62.4% !important;
+	margin-left: 62.4%;
 }
 
 .offset-by-four-fifths.column:first-child,
 .offset-by-four-fifths.columns:first-child {
-	margin-left: 83.2% !important;
+	margin-left: 83.2%;
 }
 
 /* reverse offsets */
@@ -962,42 +962,42 @@ br.clear {
 .reverse > .offset-by-fifth.columns,
 .reverse > .offset-by-one-fifth.column,
 .reverse > .offset-by-one-fifth.columns {
-	margin-left: 0 !important;
-	margin-right: 24.8% !important;
+	margin-left: 0;
+	margin-right: 24.8%;
 }
 
 .reverse > .offset-by-fifth.column:first-child,
 .reverse > .offset-by-fifth.columns:first-child,
 .reverse > .offset-by-one-fifth.column:first-child,
 .reverse > .offset-by-one-fifth.columns:first-child {
-	margin-right: 20.8% !important;
+	margin-right: 20.8%;
 }
 
 .reverse > .offset-by-two-fifths.column,
 .reverse > .offset-by-two-fifths.columns {
-	margin-left: 0 !important;
-	margin-right: 45.6% !important;
+	margin-left: 0;
+	margin-right: 45.6%;
 }
 
 .reverse > .offset-by-two-fifths.column:first-child,
 .reverse > .offset-by-two-fifths.columns:first-child {
-	margin-right: 41.6% !important;
+	margin-right: 41.6%;
 }
 
 .reverse > .offset-by-three-fifths.column,
 .reverse > .offset-by-three-fifths.columns {
-	margin-left: 0 !important;
-	margin-right: 66.4% !important;
+	margin-left: 0;
+	margin-right: 66.4%;
 }
 
 .reverse > .offset-by-three-fifths.column:first-child,
 .reverse > .offset-by-three-fifths.columns:first-child {
-	margin-right: 62.4% !important;
+	margin-right: 62.4%;
 }
 
 .reverse > .offset-by-four-fifths.column:first-child,
 .reverse > .offset-by-four-fifths.columns:first-child {
-	margin-right: 83.2% !important;
+	margin-right: 83.2%;
 }
 
 /**
@@ -1039,59 +1039,59 @@ br.clear {
 .offset-by-seventh.columns,
 .offset-by-one-seventh.column,
 .offset-by-one-seventh.columns {
-	margin-left: 18.8571% !important;
+	margin-left: 18.8571%;
 }
 
 .offset-by-seventh.column:first-child,
 .offset-by-seventh.columns:first-child,
 .offset-by-one-seventh.column:first-child,
 .offset-by-one-seventh.columns:first-child {
-	margin-left: 14.8571% !important;
+	margin-left: 14.8571%;
 }
 
 .offset-by-two-sevenths.column,
 .offset-by-two-sevenths.columns {
-	margin-left: 33.7143% !important;
+	margin-left: 33.7143%;
 }
 
 .offset-by-two-sevenths.column:first-child,
 .offset-by-two-sevenths.columns:first-child {
-	margin-left: 29.7143% !important;
+	margin-left: 29.7143%;
 }
 
 .offset-by-three-sevenths.column,
 .offset-by-three-sevenths.columns {
-	margin-left: 48.5714% !important;
+	margin-left: 48.5714%;
 }
 
 .offset-by-three-sevenths.column:first-child,
 .offset-by-three-sevenths.columns:first-child {
-	margin-left: 44.5714% !important;
+	margin-left: 44.5714%;
 }
 
 .offset-by-four-sevenths.column,
 .offset-by-four-sevenths.columns {
-	margin-left: 63.4286% !important;
+	margin-left: 63.4286%;
 }
 
 .offset-by-four-sevenths.column:first-child,
 .offset-by-four-sevenths.columns:first-child {
-	margin-left: 59.4286% !important;
+	margin-left: 59.4286%;
 }
 
 .offset-by-five-sevenths.column,
 .offset-by-five-sevenths.columns {
-	margin-left: 78.2857% !important;
+	margin-left: 78.2857%;
 }
 
 .offset-by-five-sevenths.column:first-child,
 .offset-by-five-sevenths.columns:first-child {
-	margin-left: 74.2857% !important;
+	margin-left: 74.2857%;
 }
 
 .offset-by-six-sevenths.column:first-child,
 .offset-by-six-sevenths.columns:first-child {
-	margin-left: 89.1459% !important;
+	margin-left: 89.1459%;
 }
 
 /* reverse offsets */
@@ -1099,64 +1099,64 @@ br.clear {
 .reverse > .offset-by-seventh.columns,
 .reverse > .offset-by-one-seventh.column,
 .reverse > .offset-by-one-seventh.columns {
-	margin-left: 0 !important;
-	margin-right: 18.8571% !important;
+	margin-left: 0;
+	margin-right: 18.8571%;
 }
 
 .reverse > .offset-by-seventh.column:first-child,
 .reverse > .offset-by-seventh.columns:first-child,
 .reverse > .offset-by-one-seventh.column:first-child,
 .reverse > .offset-by-one-seventh.columns:first-child {
-	margin-right: 14.8471% !important;
+	margin-right: 14.8471%;
 }
 
 .reverse > .offset-by-two-sevenths.column,
 .reverse > .offset-by-two-sevenths.columns {
-	margin-left: 0 !important;
-	margin-right: 33.7143% !important;
+	margin-left: 0;
+	margin-right: 33.7143%;
 }
 
 .reverse > .offset-by-two-sevenths.column:first-child,
 .reverse > .offset-by-two-sevenths.columns:first-child {
-	margin-right: 29.7143% !important;
+	margin-right: 29.7143%;
 }
 
 .reverse > .offset-by-three-sevenths.column,
 .reverse > .offset-by-three-sevenths.columns {
-	margin-left: 0 !important;
-	margin-right: 48.5714% !important;
+	margin-left: 0;
+	margin-right: 48.5714%;
 }
 
 .reverse > .offset-by-three-sevenths.column:first-child,
 .reverse > .offset-by-three-sevenths.columns:first-child {
-	margin-right: 44.5714% !important;
+	margin-right: 44.5714%;
 }
 
 .reverse > .offset-by-four-sevenths.column,
 .reverse > .offset-by-four-sevenths.columns {
-	margin-left: 0 !important;
-	margin-right: 63.4286% !important;
+	margin-left: 0;
+	margin-right: 63.4286%;
 }
 
 .reverse > .offset-by-four-sevenths.column:first-child,
 .reverse > .offset-by-four-sevenths.columns:first-child {
-	margin-right: 59.4286% !important;
+	margin-right: 59.4286%;
 }
 
 .reverse > .offset-by-five-sevenths.column,
 .reverse > .offset-by-five-sevenths.columns {
-	margin-left: 0 !important;
-	margin-right: 78.2857% !important;
+	margin-left: 0;
+	margin-right: 78.2857%;
 }
 
 .reverse > .offset-by-five-sevenths.column:first-child,
 .reverse > .offset-by-five-sevenths.columns:first-child {
-	margin-right: 74.2857% !important;
+	margin-right: 74.2857%;
 }
 
 .reverse > .offset-by-six-sevenths.column:first-child,
 .reverse > .offset-by-six-sevenths.columns:first-child {
-	margin-right: 89.1459% !important;
+	margin-right: 89.1459%;
 }
 
 /**
@@ -1188,39 +1188,39 @@ br.clear {
 .offset-by-eighth.columns,
 .offset-by-one-eighth.column,
 .offset-by-one-eighth.columns {
-	margin-left: 17% !important;
+	margin-left: 17%;
 }
 
 .offset-by-eighth.column:first-child,
 .offset-by-eighth.columns:first-child,
 .offset-by-one-eighth.column:first-child,
 .offset-by-one-eighth.columns:first-child {
-	margin-left: 13% !important;
+	margin-left: 13%;
 }
 
 .offset-by-three-eighths.column,
 .offset-by-three-eighths.columns {
-	margin-left: 43% !important;
+	margin-left: 43%;
 }
 
 .offset-by-three-eighths.column:first-child,
 .offset-by-three-eighths.columns:first-child {
-	margin-left: 39% !important;
+	margin-left: 39%;
 }
 
 .offset-by-five-eighths.column,
 .offset-by-five-eighths.columns {
-	margin-left: 69% !important;
+	margin-left: 69%;
 }
 
 .offset-by-five-eighths.column:first-child,
 .offset-by-five-eighths.columns:first-child {
-	margin-left: 65% !important;
+	margin-left: 65%;
 }
 
 .offset-by-seven-eighths.column:first-child,
 .offset-by-seven-eighths.columns:first-child {
-	margin-left: 91% !important;
+	margin-left: 91%;
 }
 
 /* reverse offsets */
@@ -1228,42 +1228,42 @@ br.clear {
 .reverse > .offset-by-eighth.columns,
 .reverse > .offset-by-one-eighth.column,
 .reverse > .offset-by-one-eighth.columns {
-	margin-left: 0 !important;
-	margin-right: 17% !important;
+	margin-left: 0;
+	margin-right: 17%;
 }
 
 .reverse > .offset-by-eighth.column:first-child,
 .reverse > .offset-by-eighth.columns:first-child,
 .reverse > .offset-by-one-eighth.column:first-child,
 .reverse > .offset-by-one-eighth.columns:first-child {
-	margin-right: 13% !important;
+	margin-right: 13%;
 }
 
 .reverse > .offset-by-three-eighths.column,
 .reverse > .offset-by-three-eighths.columns {
-	margin-left: 0 !important;
-	margin-right: 43% !important;
+	margin-left: 0;
+	margin-right: 43%;
 }
 
 .reverse > .offset-by-three-eighths.column:first-child,
 .reverse > .offset-by-three-eighths.columns:first-child {
-	margin-right: 39% !important;
+	margin-right: 39%;
 }
 
 .reverse > .offset-by-five-eighths.column,
 .reverse > .offset-by-five-eighths.columns {
-	margin-left: 0 !important;
-	margin-right: 69% !important;
+	margin-left: 0;
+	margin-right: 69%;
 }
 
 .reverse > .offset-by-five-eighths.column:first-child,
 .reverse > .offset-by-five-eighths.columns:first-child {
-	margin-right: 65% !important;
+	margin-right: 65%;
 }
 
 .reverse > .offset-by-seven-eighths.column:first-child,
 .reverse > .offset-by-seven-eighths.columns:first-child {
-	margin-right: 91% !important;
+	margin-right: 91%;
 }
 
 
@@ -1305,22 +1305,22 @@ br.clear {
 .gutterless > .offset-by-fifth.columns,
 .gutterless > .offset-by-one-fifth.column,
 .gutterless > .offset-by-one-fifth.columns {
-	margin-left: 20% !important;
+	margin-left: 20%;
 }
 
 .gutterless > .offset-by-two-fifths.column,
 .gutterless > .offset-by-two-fifths.columns {
-	margin-left: 40% !important;
+	margin-left: 40%;
 }
 
 .gutterless > .offset-by-three-fifths.column,
 .gutterless > .offset-by-three-fifths.columns {
-	margin-left: 60% !important;
+	margin-left: 60%;
 }
 
 .gutterless > .offset-by-four-fifths.column,
 .gutterless > .offset-by-four-fifths.columns {
-	margin-left: 80% !important;
+	margin-left: 80%;
 }
 
 /* reverse offsets */
@@ -1328,25 +1328,25 @@ br.clear {
 .gutterless.reverse > .offset-by-fifth.columns,
 .gutterless.reverse > .offset-by-one-fifth.column,
 .gutterless.reverse > .offset-by-one-fifth.columns {
-	margin-left: 0 !important;
-	margin-right: 20% !important;
+	margin-left: 0;
+	margin-right: 20%;
 }
 
 .gutterless.reverse > .offset-by-two-fifths.column,
 .gutterless.reverse > .offset-by-two-fifths.columns {
-	margin-left: 0 !important;
-	margin-right: 40% !important;
+	margin-left: 0;
+	margin-right: 40%;
 }
 
 .gutterless.reverse > .offset-by-three-fifths.column,
 .gutterless.reverse > .offset-by-three-fifths.columns {
-	margin-left: 0 !important;
-	margin-right: 60% !important;
+	margin-left: 0;
+	margin-right: 60%;
 }
 
 .gutterless.reverse > .offset-by-four-fifths.column,
 .gutterless.reverse > .offset-by-four-fifths.columns {
-	margin-right: 80% !important;
+	margin-right: 80%;
 }
 
 /**
@@ -1388,32 +1388,32 @@ br.clear {
 .gutterless > .offset-by-seventh.columns,
 .gutterless > .offset-by-one-seventh.column,
 .gutterless > .offset-by-one-seventh.columns {
-	margin-left: 14.2857% !important;
+	margin-left: 14.2857%;
 }
 
 .gutterless > .offset-by-two-sevenths.column,
 .gutterless > .offset-by-two-sevenths.columns {
-	margin-left: 28.5714% !important;
+	margin-left: 28.5714%;
 }
 
 .gutterless > .offset-by-three-sevenths.column,
 .gutterless > .offset-by-three-sevenths.columns {
-	margin-left: 42.8571% !important;
+	margin-left: 42.8571%;
 }
 
 .gutterless > .offset-by-four-sevenths.column,
 .gutterless > .offset-by-four-sevenths.columns {
-	margin-left: 57.1429% !important;
+	margin-left: 57.1429%;
 }
 
 .gutterless > .offset-by-five-sevenths.column,
 .gutterless > .offset-by-five-sevenths.columns {
-	margin-left: 71.4286% !important;
+	margin-left: 71.4286%;
 }
 
 .gutterless > .offset-by-six-sevenths.column,
 .gutterless > .offset-by-six-sevenths.columns {
-	margin-left: 85.7143% !important;
+	margin-left: 85.7143%;
 }
 
 /* reverse offsets */
@@ -1421,37 +1421,37 @@ br.clear {
 .gutterless.reverse > .offset-by-seventh.columns,
 .gutterless.reverse > .offset-by-one-seventh.column,
 .gutterless.reverse > .offset-by-one-seventh.columns {
-	margin-left: 0 !important;
-	margin-right: 14.2857% !important;
+	margin-left: 0;
+	margin-right: 14.2857%;
 }
 
 .gutterless.reverse > .offset-by-two-sevenths.column,
 .gutterless.reverse > .offset-by-two-sevenths.columns {
-	margin-left: 0 !important;
-	margin-right: 28.5714% !important;
+	margin-left: 0;
+	margin-right: 28.5714%;
 }
 
 .gutterless.reverse > .offset-by-three-sevenths.column,
 .gutterless.reverse > .offset-by-three-sevenths.columns {
-	margin-left: 0 !important;
-	margin-right: 42.8571% !important;
+	margin-left: 0;
+	margin-right: 42.8571%;
 }
 
 .gutterless.reverse > .offset-by-four-sevenths.column,
 .gutterless.reverse > .offset-by-four-sevenths.columns {
-	margin-left: 0 !important;
-	margin-right: 57.1429% !important;
+	margin-left: 0;
+	margin-right: 57.1429%;
 }
 
 .gutterless.reverse > .offset-by-five-sevenths.column,
 .gutterless.reverse > .offset-by-five-sevenths.columns {
-	margin-left: 0 !important;
-	margin-right: 71.4286% !important;
+	margin-left: 0;
+	margin-right: 71.4286%;
 }
 
 .gutterless.reverse > .offset-by-six-sevenths.column,
 .gutterless.reverse > .offset-by-six-sevenths.columns {
-	margin-right: 85.7143% !important;
+	margin-right: 85.7143%;
 }
 
 
@@ -1484,22 +1484,22 @@ br.clear {
 .gutterless > .offset-by-eighth.columns,
 .gutterless > .offset-by-one-eighth.column,
 .gutterless > .offset-by-one-eighth.columns {
-	margin-left: 12.5% !important;
+	margin-left: 12.5%;
 }
 
 .gutterless > .offset-by-three-eighths.column,
 .gutterless > .offset-by-three-eighths.columns {
-	margin-left: 37.5% !important;
+	margin-left: 37.5%;
 }
 
 .gutterless > .offset-by-five-eighths.column,
 .gutterless > .offset-by-five-eighths.columns {
-	margin-left: 62.5% !important;
+	margin-left: 62.5%;
 }
 
 .gutterless > .offset-by-seven-eighths.column,
 .gutterless > .offset-by-seven-eighths.columns {
-	margin-left: 87.5% !important;
+	margin-left: 87.5%;
 }
 
 /* reverse offsets */
@@ -1507,23 +1507,23 @@ br.clear {
 .gutterless.reverse > .offset-by-eighth.columns,
 .gutterless.reverse > .offset-by-one-eighth.column,
 .gutterless.reverse > .offset-by-one-eighth.columns {
-	margin-left: 0 !important;
-	margin-right: 12.5% !important;
+	margin-left: 0;
+	margin-right: 12.5%;
 }
 
 .gutterless.reverse > .offset-by-three-eighths.column,
 .gutterless.reverse > .offset-by-three-eighths.columns {
-	margin-left: 0 !important;
-	margin-right: 37.5% !important;
+	margin-left: 0;
+	margin-right: 37.5%;
 }
 
 .gutterless.reverse > .offset-by-five-eighths.column,
 .gutterless.reverse > .offset-by-five-eighths.columns {
-	margin-left: 0 !important;
-	margin-right: 62.5% !important;
+	margin-left: 0;
+	margin-right: 62.5%;
 }
 
 .gutterless.reverse > .offset-by-seven-eighths.column,
 .gutterless.reverse > .offset-by-seven-eighths.columns {
-	margin-right: 87.5% !important;
+	margin-right: 87.5%;
 }
