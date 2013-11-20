@@ -36,6 +36,14 @@ a {
 	text-decoration: none;
 }
 
+hr {
+	border: none;
+	border-top: 1px solid #aaa;
+	width: 60%;
+	margin: 3em auto;
+	height: 0;
+}
+
 div.row {
 	margin-bottom: 1.5em;
 }
@@ -50,7 +58,7 @@ div.row > div {
 	box-sizing: border-box;
 	border: 1px solid #ddd;
 	background-color: #f3f3f3;
-	line-height: 2.6em;
+	line-height: 3.2em;
 	text-align: center;
 	overflow: hidden;
 	white-space: nowrap;
@@ -59,13 +67,13 @@ div.row > div {
 	border-radius: 4px;
 }
 
-div.no-gutters > div {
+div.gutterless > div {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
 }
 
-div.row.no-gutters > div:first-child {
+div.row.gutterless > div:first-child {
 	-webkit-border-top-left-radius: 4px;
 	-webkit-border-bottom-left-radius: 4px;
 	-moz-border-radius-topleft: 4px;
@@ -74,7 +82,7 @@ div.row.no-gutters > div:first-child {
 	border-bottom-left-radius: 4px;
 }
 
-div.row.no-gutters > div:last-child {
+div.row.gutterless > div:last-child {
 	-webkit-border-top-right-radius: 4px;
 	-webkit-border-bottom-right-radius: 4px;
 	-moz-border-radius-topright: 4px;
